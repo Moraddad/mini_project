@@ -19,7 +19,6 @@ def product_menu(product_menu_choice):
         product_list.append(new_prodcut)
         print(product_list)
         product_file.write(new_prodcut + "\n")
-        
     elif product_menu_choice == "3":
         index = 1
         for product in product_list:
@@ -72,7 +71,6 @@ def main_menu():
     print("WELCOME to Main Menu!")
     first_choice = input("Press 1 to see the product menu/Press 2 to enter the couriers menu/ Press 0 to exit.\n")
     if first_choice == "0":
-        # product_file.close()
         exit()
     elif first_choice == "1":
         second_choice = input(
@@ -96,7 +94,6 @@ def main_menu():
         """
         )
         courier_menu(second_choice)
-
 
 
 while True:
