@@ -107,10 +107,8 @@ def main_menu():
             main_menu()
     else:
         print("Please enter the correct input!")
-        main_menu()git status
-        
-        
+        main_menu()
 
-
+        
 while True:
     main_menu()
