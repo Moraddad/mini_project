@@ -1,3 +1,29 @@
+def product_menu(product_menu_choice, product_list):
+    if product_menu_choice == "1":
+        print(f"Products List: {product_list}")
+    elif product_menu_choice == "2":
+        product_adder(product_list)
+    elif product_menu_choice == "3":
+        product_updater(product_list)
+    elif product_menu_choice == "4":
+        product_remover(product_list)
+
+
+def courier_menu(courier_menu_choice, courier_list):
+    if courier_menu_choice == "1":
+        with open("couriers.txt") as courier_file:
+            courier_list = []
+            for line in courier_file:
+                courier_list.append(line.rstrip())
+        print(f"Couriers List: {courier_list}")
+    elif courier_menu_choice == "2":
+        courier_adder(courier_list)
+    elif courier_menu_choice == "3":
+        courier_updater(courier_list)
+    elif courier_menu_choice == "4":
+        courier_remover(courier_list)
+
+
 def product_adder(input_list):
     new_item = input("Enter new item's name:\n")
     input_list.append(new_item)
@@ -83,31 +109,4 @@ def courier_remover(input_list):
             if i != deleted_name:
                 file.write(i + "\n")
 
-# def product_menu(product_menu_choice):
-#     if product_menu_choice == "1":
-#         with open("products.txt") as product_file:
-#             product_list = []
-#             for line in product_file:
-#                 product_list.append(line.rstrip())
-#         print(f"Products List: {product_list}")
-#     elif product_menu_choice == "2":
-#         product_adder(product_list)
-#     elif product_menu_choice == "3":
-#         product_updater(product_list)
-#     elif product_menu_choice == "4":
-#         product_remover(product_list)
 
-
-def courier_menu(courier_menu_choice, courier_list):
-    if courier_menu_choice == "1":
-        with open("couriers.txt") as courier_file:
-            courier_list = []
-            for line in courier_file:
-                courier_list.append(line.rstrip())
-        print(f"Couriers List: {courier_list}")
-    elif courier_menu_choice == "2":
-        courier_adder(courier_list)
-    elif courier_menu_choice == "3":
-        courier_updater(courier_list)
-    elif courier_menu_choice == "4":
-        courier_remover(courier_list)
