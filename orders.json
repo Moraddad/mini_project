@@ -1,0 +1,30 @@
+[
+    {
+        "customer_name": "John",
+        "customer_address": "Unit 2, 12 Main Street, LONDON, WH1 2ER",
+        "customer_phone": "432222",
+        "courier": 2,
+        "status": "Sent"
+    },
+    {
+        "customer_name": "Saman",
+        "customer_address": "Tehranpars",
+        "customer_phone": "0474261356",
+        "courier": 1,
+        "status": "Preparing"
+    },
+    {
+        "customer_name": "Kiani",
+        "customer_address": "dklfjbkhadfkdwhf",
+        "customer_phone": "66655",
+        "courier": 4,
+        "status": "Delivered"
+    },
+    {
+        "customer_name": "D",
+        "customer_address": "The red door",
+        "customer_phone": "45310929",
+        "courier": 5,
+        "status": "Sent"
+    }
+]
