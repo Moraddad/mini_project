@@ -1,30 +1,30 @@
-[
-    {
+{
+    "1": {
         "customer_name": "John",
-        "customer_address": "Unit 2, 12 Main Street, LONDON, WH1 2ER",
+        "customer_address": "sdffdfff",
         "customer_phone": "432222",
         "courier": 2,
-        "status": "Sent"
-    },
-    {
-        "customer_name": "Saman",
-        "customer_address": "Tehranpars",
-        "customer_phone": "0474261356",
-        "courier": 1,
-        "status": "Preparing"
-    },
-    {
-        "customer_name": "Kiani",
-        "customer_address": "dklfjbkhadfkdwhf",
-        "customer_phone": "66655",
-        "courier": 4,
         "status": "Delivered"
     },
-    {
-        "customer_name": "D",
-        "customer_address": "The red door",
-        "customer_phone": "45310929",
-        "courier": 5,
-        "status": "Sent"
+    "2": {
+        "customer_name": "saman",
+        "customer_address": "saveh",
+        "customer_phone": "1233",
+        "courier": 3,
+        "status": "preparing"
+    },
+    "3": {
+        "customer_name": "Ghader",
+        "customer_address": "aaaaaaaaaaa",
+        "customer_phone": "212121",
+        "courier": 1,
+        "status": "preparing"
+    },
+    "4": {
+        "customer_name": "akbari",
+        "customer_address": "ghhy rr",
+        "customer_phone": "456432",
+        "courier": 4,
+        "status": "Preparing"
     }
-]
+}
