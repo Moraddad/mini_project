@@ -43,28 +43,25 @@ def orders_menu(order_menu_choice, order_list, c_list):
     else:
         print(wrong_input)
           
-def add_item(input_list, item_type):
-    new_item = input(f"Enter new {item_type}'s name:\n")
+def add_item(input_list : dict, input_name : str):
+    new_item = input(f"Enter new {input_name}'s name:\n")
     new_number = str(len(input_list) + 1)
     input_list[new_number] = new_item
-    print(f"New {item_type}s list: ")
+    print(f"New {input_name}s list: ")
     print_items(input_list)
-    with open(f"{item_type}.json", "w") as file:
-        json.dump(input_list, file, indent=4)
+    write_file(f"{input_name}.json", input_list)
 
-
-def update_item(input_list,item_type):
+def update_item(input_list : dict, input_name: str):
     print_items(input_list)
     chosen_number = get_correct_input(input_list, "update")
-    updated_name = input(f"Enter the new {item_type}'s name: \n")
+    updated_name = input(f"Enter the new {input_name}'s name: \n")
     input_list[chosen_number] = updated_name
-    print(f"Updated {item_type}s list: ")
+    print(f"Updated {input_name}s list: ")
     print_items(input_list)
-    with open(f"{item_type}.json", "w") as file:
-        json.dump(input_list, file, indent=4)
+    write_file(f"{input_name}.json", input_list)
+   
        
-
-def remove_item(input_list, item_type):
+def remove_item(input_list : dict, input_name : str):
     print_items(input_list)
     chosen_number = get_correct_input(input_list, "remove")
     input_list.pop(chosen_number)
@@ -74,10 +71,9 @@ def remove_item(input_list, item_type):
     for name in temp_values:
         input_list[i] = name
         i += 1
-    print(f"New {item_type}s list: ")
+    print(f"New {input_name}s list: ")
     print_items(input_list)
-    with open(f"{item_type}.json", "w") as file:
-        json.dump(input_list, file, indent=4)
+    write_file(f"{input_name}.json", input_list)
 
 
 def add_order(input_list, c_list):
@@ -87,7 +83,8 @@ def add_order(input_list, c_list):
     new_order["customer_phone"] = input("Please enter the phone number: \n")
     print("List of couriers: ")
     print_items(c_list)
-    new_order["courier"] = int(input("Which courier do you want to assign? enter the code:\n"))
+    courier_number = input("Which courier do you want to assign? enter the code:\n")
+    new_order["courier"] = c_list[courier_number]
     new_order["status"] = "preparing"
     print(f"New order: {new_order}")
     new_number = str(len(input_list) + 1)
@@ -166,3 +163,12 @@ def get_correct_input(input_list, command):
     return chosen_number
 
 
+def read_file(dict_name : str):
+    with open(dict_name) as file:
+        content = json.load(file)
+    return content
+
+
+def write_file(dict_name : str, contetnt):
+    with open(dict_name, "w") as file:
+        json.dump(contetnt, file, indent=4)
