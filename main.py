@@ -11,8 +11,6 @@ def main_menu():
         print("*** Product Menu ***")
         second_choice = input(product_menu_message)
         while second_choice != "0":
-            # with open("product.json", "r") as product_file:
-            #     product_list = json.load(product_file)
             product_list = read_file("product.json")
             products_menu(second_choice, product_list)
             print("\n*** Product Menu ***")
@@ -25,7 +23,7 @@ def main_menu():
         while second_choice != "0":
             courier_list = read_file("courier.json")
             couriers_menu(second_choice, courier_list)
-            print("*** Courier Menu ***")
+            print("\n*** Courier Menu ***")
             second_choice = input(courier_menu_message)
         if second_choice == "0":
             main_menu()
@@ -34,8 +32,11 @@ def main_menu():
         second_choice = input(order_menu_message)
         while second_choice != "0":
             courier_list = read_file("courier.json")
-            order_list = read_file("orders.json")
-            orders_menu(second_choice, order_list, courier_list)
+            order_list = read_file("order.json")
+            product_list = read_file("product.json")
+
+            orders_menu(second_choice, order_list, courier_list, product_list)
+            print("\n*** Orders Menu ***")
             second_choice = input(order_menu_message)
         if second_choice == "0":
             main_menu()

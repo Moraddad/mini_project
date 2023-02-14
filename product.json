@@ -1,6 +1,26 @@
 {
-    "1": "Pizza",
-    "2": "Salad",
-    "3": "Pasta",
-    "4": "Coke"
+    "1": {
+        "Name": "Pasta",
+        "Price": "12"
+    },
+    "2": {
+        "Name": "Pizza",
+        "Price": "23"
+    },
+    "3": {
+        "Name": "Ghorme",
+        "Price": "14"
+    },
+    "4": {
+        "Name": "Fanta",
+        "Price": "2"
+    },
+    "5": {
+        "Name": "Salad",
+        "Price": "6"
+    },
+    "6": {
+        "Name": "Burger",
+        "Price": "11"
+    }
 }
