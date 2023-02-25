@@ -2,12 +2,11 @@
     "1": {
         "customer_name": "Fariba",
         "customer_address": "12 st, Paris",
-        "customer_phone": "12683344",
+        "customer_phone": "44433",
         "courier": "Asghar",
-        "status": "Sent",
+        "status": "Preparing",
         "items": [
-            "pasta",
-            "Pizza"
+            "Pasta"
         ]
     },
     "2": {
@@ -15,9 +14,9 @@
         "customer_address": "Tehranpars",
         "customer_phone": "3442223",
         "courier": "Zhaale",
-        "status": "Sent",
+        "status": "Delivered",
         "items": [
-            "Fanta"
+            "Pasta"
         ]
     },
     "3": {
@@ -40,19 +39,17 @@
         "courier": "Kian",
         "status": "Delivered",
         "items": [
-            "Ghorme",
-            "Burger"
+            "Pasta"
         ]
     },
     "5": {
-        "customer_name": "Nima",
-        "customer_address": "West",
-        "customer_phone": "342344",
-        "courier": "Zhaale",
+        "customer_name": "Hoda",
+        "customer_address": "23 gharbi",
+        "customer_phone": "0773733",
+        "courier": "Kaveh",
         "status": "preparing",
         "items": [
-            "Salad",
-            "Burger"
+            "Mac & Cheese"
         ]
     }
 }
