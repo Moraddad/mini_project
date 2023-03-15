@@ -1,3 +1,11 @@
+main_menu_message = """
+        Press [1] to enter the PRODUCTS MENU,
+        Press [2] to enter the COURIERS MENU,
+        Press [3] to enter the ORDERS MENU,
+        Press [4] to enter the CUSTOMERS MENU,
+        Press [0] to EXIT.
+        """
+
 product_menu_message = """
         Press [1] to PRINT products list,
         Press [2] to ADD a new product to the list,
@@ -12,12 +20,7 @@ courier_menu_message = """
         Press [4] to DELETE a courier,
         Press [0] to RETURN to main menu.
         """
-main_menu_message = """
-        Press [1] to enter the PRODUCTS MENU,
-        Press [2] to enter the COURIERS MENU,
-        Press [3] to enter the ORDERS MENU,
-        Press [0] to EXIT.
-        """
+
 order_menu_message = """
         Press [1] to PRINT orders list,
         Press [2] to ADD a new order,
@@ -26,5 +29,11 @@ order_menu_message = """
         Press [5] to DELETE an order,
         Press [0] to RETURN to main menu.
 """
-
+customer_menu_message = """
+        Press [1] to PRINT customers list,
+        Press [2] to ADD a new customer to the list,
+        Press [3] to UPDATE an existing customer,
+        Press [4] to DELETE a customer,
+        Press [0] to RETURN to main menu.
+"""
 wrong_input = "******** Please enter the correct input! ********"
